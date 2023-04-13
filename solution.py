@@ -6,4 +6,4 @@ def solution(x_success: int,
              x_cnt: int, 
              y_success: int, 
              y_cnt: int) -> bool:
-    return proportions_ztest(count=[x_success, y_success], nobs=[x_cnt, y_cnt], alternative='smaller')[1] > 0.03
+    return proportions_ztest(count=[x_success, y_success], nobs=[x_cnt, y_cnt], alternative='smaller')[1] < 0.03
